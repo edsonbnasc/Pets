@@ -9,7 +9,7 @@ formulario1.addEventListener('submit',(evento)=> {
     const descricao = evento.target.querySelector('[data-descricao]').value
  
  
-    clienteService.criarProduto(produto,preco,descricao)
+    produtoService.criarProduto(produto,preco,descricao)
     .then(() => {
         window.location.href = '../telas/cadastro_concluido.html'            
      })
