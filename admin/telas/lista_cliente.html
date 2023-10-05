@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="">
+    <title>ShoPETs</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <img class="cabecalho__logo" src="../assets/img/pets1.png" alt="Logotipo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="./cadastro_produto.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="#">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+    </nav>
+</header>
+<main class="clientes-container">
+    <table class="tabela">
+        <thead>
+            <tr>
+                <th class="tabela__coluna--p">Nome</th>
+                <th class="tabela__coluna--p">Email</th>
+                <th class="tabela__coluna--m tabela__alinhamento--direita">
+                    <a href="./cadastra_cliente.html" class="botao-simples botao-simples--adicionar" style="color:var(--cor-primaria);">Novo Cliente</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody data-tabela>
+          
+           
+            
+           
+    </tbody>
+    </table>
+     
+ <!--vai criar uma tabela apartir do  arquivo json-->
+        
+        <!--    
+        <div class="modal-container modal--fechado">
+            <article class="modal">
+                <h2 class="modal__titulo">Excluir</h2>
+                <button class="modal__fechar">X</button>
+                <p class="modal__texto">Deseja excluir essa entrada?</p>
+            <div class="modal__botao-container">
+                <button class="modal__botao modal__botao--botao--confirmar">Excluir</button>
+                <button class="modal__botao">Não Excluir</button>
+            </div>
+            </article>
+
+        </div> 
+</main>
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Cadastrar um produto</h1>
+            <form action="#" class="flex flex--coluna">
+                <div class="input-container">
+                    <input name="nome" class="input" placeholder="Nome">
+                    <label class="input-label" for="nome">Nome</label>
+                    <span class="input-mensagem-erro">Mensagem genérica de erro</span>
+                </div>
+            </form>
+        </section>-->
+</main>
+
+    
+</body>
+
+<script type="module" src="../controller/listaClientes-controller.js"></script>
+</html>

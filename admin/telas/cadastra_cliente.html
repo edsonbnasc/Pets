@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <title>ShoPETs-Cliente</title>
+</head>
+<body>
+    <header class="cabecalho container">
+        <img class="cabecalho__logo" src="../assets/img/pets1.png" alt="Logotipo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="./lista_cliente.html">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="#">Produtos</a></li>
+                <li class="cabecalho__link"><a href="./edita_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+    </nav>
+</header>
+<main class="container flex flex--centro flex--coluna">
+    <section class="cartao cadastro">
+        <h1 class="cartao__titulo">Novo Cliente</h1>
+        <form class="flex flex--coluna" data-form>
+            <div class="input-container">
+                <label class="input-label" for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="input" placeholder="Digite o seu Nome" required data-nome>
+                <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="email">email</label>
+                <input type="text" name="email" id="email" class="input" placeholder="Digite o seu email" required data-email>
+                <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+            </div>
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+    </section>
+</main>
+
+
+    <script type="module" src="../controller/cadastraCliente-controller.js"></script>
+</body>
+</html>
